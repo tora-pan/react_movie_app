@@ -15,7 +15,6 @@ function App() {
     fetch(FEATURED_API)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setMovies(data.results);
       });
   }, []);
